@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yevhen Khreptun - Front-End Developer</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <!-- Google fonts icons -->
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="hero" id="home">
+                <video class="hero__video" autoplay loop muted>
+                <source src="./img/hero.mp4" type="video/mp4" />
+                </video>
+                <div class="container">
+                <header class="header">
+                    <div class="container header__container">
+                    <a class="person-card" href="./index.html">
+                        <div class="person-card__info">
+                        <div class="person-card__img">
+                            <img src="./img/photo-person.svg" alt="My photo" />
+                        </div>
+                        <div class="person-card__about">
+                            <p><strong>Yevhen</strong> Khreptun</p>
+                            <p>Front-End <strong>Developer</strong></p>
+                        </div>
+                        </div>
+                    </a>
+                    <!-- End of person card -->
+                    <nav class="menu">
+                        <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#home" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about-me" class="menu__link">About me</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#resume" class="menu__link">Resume</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#portfolio" class="menu__link">Portfolio</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact" class="menu__link">Contact</a>
+                        </li>
+                        </ul>
+                    </nav>
+                    <!-- End of navigation -->
+                    <div class="header__buttons">
+                        <button class="button">Hire me</button>
+                        <button class="change">
+                        <div class="change__info">
+                            <span class="material-symbols-outlined"> light_mode </span>
+                            <span class="change__text">Light Mode</span>
+                        </div>
+                        <div class="change__info none">
+                            <span class="change__text">Dark Mode</span>
+                            <span class="material-symbols-outlined"> dark_mode </span>
+                        </div>
+                        </button>
+                    </div>
+                    <!-- Change theme -->
+                    </div>
+                </header>
+                <!-- End of header -->
+                <div class="hero__inner">
+                    <div class="hero__info">
+                    <h1 class="hero__title"><strong>Hi</strong>, my name is</h1>
+                    <p class="hero__name">Yevhen Khreptun.</p>
+                    <p class="hero__description">
+                        I'm a Front-End Developer based in the Montreal.
+                        <strong>I love what I do</strong>.
+                    </p>
+                    </div>
+                    <button class="button">Contact</button>
+                </div>
+                </div>
+            </section>
+            <!-- End of hero -->
+            <main class="main">
+                <section id="about-me" class="about">
+                    <div class="container">
+                        <h2 class="title about__title">About me</h2>
+                        <div class="about__inner">
+                            <div class="about__info">
+                                <h3 class="about__info-title">I am a Front-End Developer</h3>
+                                <p class="about__info-description">
+                                Hello! My name is Yevhen and I enjoy creating things that live
+                                on the internet.
+                                </p>
+                                <p class="about__info-description">
+                                I started my coding journey almost exactly a year ago and now I'm working full time and doing freelance projects on the side for my friends.
+                                </p>
+                                <p class="about__info-description">
+                                Interested in the entire frontend spectrum and working on
+                                ambitious projects with positive people.
+                                </p>
+                            </div>
+                            <div class="about__testimonials testimonials">
+                                <h3 class="about__info-title">Testimonials</h3>
+                                <div class="swiper testimonials__slider">
+                                    <div class="swiper-wrapper testimonials__wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide testimonials__slide">
+                                            <div class="testimonials__slide-img">
+                                                <img src="./img/photo-person.svg" alt="User photo">
+                                            </div>
+                                            <div class="testimonials__slide-description">
+                                                <blockquote class="testimonials__slide-text">
+                                                    "Yevhen is one of the best professionals that we have known in web development skills. Between his skills you can find good communication and accuracy with the planning in complex projects."
+                                                </blockquote>        
+                                                <p class="testimonials__slide-name">Alex Heutom<span>Epam</span></p>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="swiper-slide testimonials__slide">Slide 2</div>
+                                        <div class="swiper-slide testimonials__slide">Slide 3</div> -->
+                                        <!-- Slider navigation buttons -->
+                                        <div class="testimonials__buttons">
+                                            <div class="swiper-button-prev testimonials__button-prev">
+                                                <span class="material-symbols-outlined">
+                                                    navigate_before
+                                                </span>
+                                            </div>
+                                            <div class="swiper-button-next testimonials__button-next">
+                                                <span class="material-symbols-outlined">
+                                                    navigate_next
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of testimonials slider -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        <footer class="footer"></footer>
+        </div>
+    </body>
+</html>
