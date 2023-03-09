@@ -152,6 +152,12 @@ strong {
     transition: transform .1s ease-in;
 }
 
+.button--light {
+    color: var(--dark);
+    background-color: var(--accent);
+    border-color: var(--broke);
+}
+
 .button:active,
 .button:hover {
     transform: scale(1.01);
@@ -264,11 +270,11 @@ strong {
 
 .about {
     padding: var(--section-padding) 0;
+    padding-top: calc(var(--section-padding) + 70px);
     background-color: var(--accent);
 }
 
 .about__title {
-    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -295,9 +301,6 @@ strong {
     margin-bottom: var(--gap);
 }
 
-.about__testimonials {
-}
-
 /* Slider testimonials */
 
 .testimonials {
@@ -305,13 +308,7 @@ strong {
     min-width: 40%;
 }
 
-.testimonials__slider {
-    
-}
-
 /* Slides testimonials */
-
-
 
 .testimonials__slide-img {
     --size: 90px;
@@ -353,9 +350,6 @@ strong {
     position: relative;
 }
 
-.testimonials__slide {
-}
-
 .testimonials__buttons {
     gap: var(--gap);
     display: flex;
@@ -377,16 +371,10 @@ strong {
     cursor: pointer;
 }
 
-.testimonials__button-prev {
-
-}
-
-.testimonials__button-next {
-}
-
 /* Sections title */
 
 .title {
+    text-align: center;
     font-size: 3em;
     text-transform: uppercase;
     font-weight: 700;
@@ -394,4 +382,100 @@ strong {
 
 .title--light {
     color: var(--light);
+}
+
+/* Resume section */
+
+.resume {
+    padding: var(--section-padding) 0;
+    padding-top: calc(var(--section-padding) + 70px);
+    background-color: var(--dark);
+    color: var(--accent);
+}
+
+.resume__title {
+    margin-bottom: 50px;
+}
+
+.resume__wrapper {
+    gap: calc(var(--gap) *4);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.resume__info {
+    max-width: 33%;
+    min-width: 260px;
+}
+
+.resume__info-title {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Resume proficiency */
+
+
+.resume-proficiency__item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.resume-proficiency__title {
+    gap: calc(var(--gap) * 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 500;
+    opacity: .5;
+}
+
+.resume-proficiency__title .material-symbols-outlined {
+    font-size: 14px;
+}
+
+.resume-proficiency__title .resume-proficiency__date {
+    min-width: 60px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.resume-proficiency__description {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.resume-proficiency__skills {
+    padding-left: 10px;
+}
+
+.proficiency-skills {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.proficiency-skills__item {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--broke);
+    background-color: var(--broke);
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.resume__file {
+    display: flex;
+}
+
+.resume__link {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
 }
