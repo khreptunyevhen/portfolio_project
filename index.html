@@ -12,6 +12,7 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
+        <link rel="stylesheet" href="https://kit.fontawesome.com/f963fbf1b8.css" crossorigin="anonymous">
     </head>
     <body>
         <div class="wrapper">
@@ -250,6 +251,7 @@
                                 <a href="#!" class="gallery__filter-link button gallery__button">E-commerce</a>
                             </li>
                         </ul>
+                        <!-- End of filter -->
                         <ul class="portfolio__gallery gallery">
                             <li class="gallery__item">
                                 <div class="gallery__item-inner">
@@ -280,13 +282,64 @@
                                 </div>
                             </li>
                         </ul>
+                        <!-- End of gallery -->
                         <div class="portfolio__gallery-button">
                             <a href="#!" class="button gallery__button">See more</a>
                         </div>
                     </div>
                 </section>
+                <!-- End of portfolio section -->
             </main>
-        <footer class="footer"></footer>
+        <footer id="contact" class="footer">
+            <div class="container">
+                <h2 class="title footer__title">Contact me</h2>
+                <div class="footer__container">
+                    <div class="footer__socials socials">
+                        <h3 class="socials__title">You can <strong>find</strong> me.</h3>
+                        <ul class="socials__body">
+                            <li class="socials__item">
+                                <a href="https://www.facebook.com/profile.php?id=100009189044722" class="socials__link" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://www.instagram.com/khreptun.e/" class="socials__link" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://www.linkedin.com/in/yevhen-khreptun-aa86b4267/" class="socials__link" target="_blank">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://github.com/khreptunyevhen" class="socials__link" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End of socials -->
+                    <form action="#!" class="footer__form form">
+                        <div class="form__fields">
+                            <div class="form__fields-top">
+                                <input type="text" name="name" placeholder="Name" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form__fields-medium">
+                                <input type="text" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form__fields-bottom">
+                                <textarea name="message" id="message" required placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="button button--light-border">Send message</button>
+                    </form>
+                    <!-- End of contact form -->
+                </div>
+            </div>
+        </footer>
         </div>
+        <script src="https://kit.fontawesome.com/f963fbf1b8.js" crossorigin="anonymous"></script>
     </body>
 </html>
