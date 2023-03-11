@@ -654,10 +654,6 @@ strong {
     width: 50%; 
 }
 
-.form__fields {
-
-}
-
 .form__fields-top {
     display: flex;
     justify-content: space-between;

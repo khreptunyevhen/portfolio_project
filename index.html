@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yevhen Khreptun - Front-End Developer</title>
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <!-- Google fonts icons -->
         <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-        />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
         <link rel="stylesheet" href="https://kit.fontawesome.com/f963fbf1b8.css" crossorigin="anonymous">
     </head>
     <body>
         <div class="wrapper">
             <section class="hero" id="home">
                 <video class="hero__video" autoplay loop muted>
-                <source src="./img/hero.mp4" type="video/mp4" />
+                <source src="./img/hero.mp4" type="video/mp4">
                 </video>
                 <div class="container">
-                <header class="header">
-                    <div class="container header__container">
-                    <a class="person-card" href="./index.html">
-                        <div class="person-card__info">
-                        <div class="person-card__img">
-                            <img src="./img/photo-person.svg" alt="My photo" />
+                    <header class="header">
+                        <div class="container header__container">
+                        <a class="person-card" href="./index.html">
+                            <div class="person-card__info">
+                            <div class="person-card__img">
+                                <img src="./img/photo-person.svg" alt="My photo">
+                            </div>
+                            <div class="person-card__about">
+                                <p><strong>Yevhen</strong> Khreptun</p>
+                                <p>Front-End <strong>Developer</strong></p>
+                            </div>
+                            </div>
+                        </a>
+                        <!-- End of person card -->
+                        <nav class="menu">
+                            <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#home" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#about-me" class="menu__link">About me</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#resume" class="menu__link">Resume</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#portfolio" class="menu__link">Portfolio</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contact" class="menu__link">Contact</a>
+                            </li>
+                            </ul>
+                        </nav>
+                        <!-- End of navigation -->
+                        <div class="header__buttons">
+                            <button class="button">Hire me</button>
+                            <a class="change">
+                                <div class="change__info">
+                                    <span class="material-symbols-outlined"> light_mode </span>
+                                    <span class="change__text">Light Mode</span>
+                                </div>
+                                <div class="change__info none">
+                                    <span class="change__text">Dark Mode</span>
+                                    <span class="material-symbols-outlined"> dark_mode </span>
+                                </div>
+                            </a>
                         </div>
-                        <div class="person-card__about">
-                            <p><strong>Yevhen</strong> Khreptun</p>
-                            <p>Front-End <strong>Developer</strong></p>
+                        <!-- Change theme -->
                         </div>
+                    </header>
+                    <!-- End of header -->
+                    <div class="hero__inner">
+                        <div class="hero__info">
+                        <h1 class="hero__title"><strong>Hi</strong>, my name is</h1>
+                        <p class="hero__name">Yevhen Khreptun.</p>
+                        <p class="hero__description">
+                            I'm a Front-End Developer based in the Montreal.
+                            <strong>I love what I do</strong>.
+                        </p>
                         </div>
-                    </a>
-                    <!-- End of person card -->
-                    <nav class="menu">
-                        <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#home" class="menu__link">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#about-me" class="menu__link">About me</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#resume" class="menu__link">Resume</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#portfolio" class="menu__link">Portfolio</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#contact" class="menu__link">Contact</a>
-                        </li>
-                        </ul>
-                    </nav>
-                    <!-- End of navigation -->
-                    <div class="header__buttons">
-                        <button class="button">Hire me</button>
-                        <button class="change">
-                        <div class="change__info">
-                            <span class="material-symbols-outlined"> light_mode </span>
-                            <span class="change__text">Light Mode</span>
-                        </div>
-                        <div class="change__info none">
-                            <span class="change__text">Dark Mode</span>
-                            <span class="material-symbols-outlined"> dark_mode </span>
-                        </div>
-                        </button>
+                        <a href="#contact" class="button">Contact</a>
                     </div>
-                    <!-- Change theme -->
-                    </div>
-                </header>
-                <!-- End of header -->
-                <div class="hero__inner">
-                    <div class="hero__info">
-                    <h1 class="hero__title"><strong>Hi</strong>, my name is</h1>
-                    <p class="hero__name">Yevhen Khreptun.</p>
-                    <p class="hero__description">
-                        I'm a Front-End Developer based in the Montreal.
-                        <strong>I love what I do</strong>.
-                    </p>
-                    </div>
-                    <button class="button">Contact</button>
-                </div>
                 </div>
             </section>
             <!-- End of hero -->
