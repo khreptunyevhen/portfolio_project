@@ -180,7 +180,8 @@ strong {
     border-color: var(--accent);
 }
 
-.button[type='submit']:hover {
+.button[type='submit']:hover,
+.button--light-hover:hover {
     border-color: var(--accent);
     color: var(--dark);
     background-color: var(--accent);
@@ -751,6 +752,34 @@ textarea:focus {
     transform: translateY(50%);
 }
 
+/* Projects styles */
+
+.project {
+    padding: var(--section-padding) 0;
+    padding-top: calc(var(--section-padding) + 70px);
+    background-color: var(--accent);
+}
+
+.project__title {
+    margin-bottom: 50px;
+}
+
+.project__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(300px, fit-content);
+    gap: calc(var(--gap) * 4);
+}
+
+.project__description {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.project__container .resume-proficiency__skills .resume__info-title {
+    margin-left: -10px;
+}
+
 
 /* Media styles */
 
@@ -772,7 +801,7 @@ textarea:focus {
     }
 
     .menu,
-    .header__buttons button {
+    .header__buttons .button {
         display: none;
     }
 }
@@ -852,6 +881,10 @@ textarea:focus {
 
     .form {
         width: 100%;
+    }
+
+    .project__container {
+        grid-template-columns: 1fr;
     }
 }
 
